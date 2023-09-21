@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+// Защита от переполнения
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Обнуление отступов по умолчанию у списков
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    padding: 0;
+    background: none;
+    color: inherit;
+
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    font: inherit;
+    outline: none;
+
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+select {
+    font: inherit;
+}
+
+textarea {
+    font: inherit;
+    resize: none;
+}
+
+body {
+    margin: 0;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

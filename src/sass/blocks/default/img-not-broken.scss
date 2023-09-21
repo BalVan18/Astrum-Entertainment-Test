@@ -1,0 +1,32 @@
+//Стилизация битых картинок
+.img-not-broken {
+    position: relative;
+    display: block;
+    height: auto;
+    overflow: hidden;
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsl(0, 0%, 93.3%);
+    }
+
+    &::after {
+        content: attr(alt);
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    &[alt] {
+        text-align: center;
+        font-weight: bold;
+        color: hsl(0, 0%, 60%);
+    }
+}

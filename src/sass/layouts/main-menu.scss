@@ -1,0 +1,14 @@
+.main-menu {
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+    &__item-link {
+        font-size: var(--f-s-body);
+        text-align: center;
+        color: var(--c-text);
+    }
+}

@@ -1,0 +1,77 @@
+.input {
+    position: relative;
+    --inputHeight: 40px;
+    --inputFontSize: var(--f-s-body);
+    --inputBorder: var(--border);
+    --inputBorderRadius: var(--border-radius);
+    --inputColor: var(--c-text);
+    --inputColorPlaceholder: var(--c-second-light);
+    --inputBg: var(--c-white);
+    --inputErrorFontSize: var(--f-s-small);
+    --inputErrorColor: var(--c-error);
+    width: 100%;
+
+    &._textarea {
+        --inputHeight: 80px;
+    }
+
+    &._revert {
+        --inputBg: var(--c-bg);
+        --inputColorPlaceholder: var(--c-bg);
+    }
+
+    &._with-icon {
+        position: relative;
+        .icon {
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            fill: var(--c-bg-second);
+        }
+    }
+
+    &._with-icon &__text {
+        padding: 14px 40px 14px 16px;
+    }
+
+    &__text {
+        width: 100%;
+        height: var(--inputHeight);
+        padding: 14px 16px;
+        border: var(--inputBorder);
+        border-radius: var(--inputBorderRadius);
+        font-size: var(--inputFontSize);
+        color: var(--inputColor);
+        background-color: var(--inputBg);
+        transition: var(--transition);
+
+        &::placeholder {
+            font-size: var(--inputFontSize);
+            color: var(--inputColorPlaceholder);
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active, &:focus {
+            opacity: 0.8;
+            outline: none;
+        }
+
+        &._error {
+            position: relative;
+            animation: bounce 1s linear;
+        }
+    }
+
+    &__error {
+        position: absolute;
+        top: 2px;
+        left: 16px;
+        font-size: var(--inputErrorFontSize);
+        color: var(--inputErrorColor);
+    }
+}

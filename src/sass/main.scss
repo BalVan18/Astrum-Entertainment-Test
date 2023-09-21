@@ -1,0 +1,33 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/icon";
+@import "global/scaffolding";
+@import "global/general";
+@import "global/animations";
+
+@import "blocks/default/container";
+@import "blocks/default/margins";
+@import "blocks/default/btn";
+@import "blocks/default/mobile-btn";
+@import "blocks/default/text";
+@import "blocks/default/input";
+@import "blocks/default/link";
+@import "blocks/default/overlay";
+@import "blocks/default/form";
+@import "blocks/default/img-not-broken";
+@import "blocks/default/scroll-block";
+
+@import "blocks/common/b-text";
+@import "blocks/common/logo";
+@import "blocks/common/modals";
+
+@import "layouts/body";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main-menu";
+@import "layouts/mobile-side";
+
+@import "pages/index/promo";

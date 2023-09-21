@@ -1,0 +1,61 @@
+.link {
+    --linkColorPrimary: var(--c-primary);
+    --linkColorText: var(--c-text);
+    --linkActiveOpacity: 0.7;
+    position: relative;
+    color: var(--c-text);
+    transition: fill 0.4s linear, opacity 0.4s linear, color 0.4s linear;
+    &:hover, &:active {
+        color: var(--linkColorPrimary);
+    }
+    &:active {
+        opacity: 0.6;
+    }
+
+    &._with-icon {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            fill: var(--linkColorText);
+        }
+
+        &:hover .icon {
+            fill: var(--linkColorPrimary);
+        }
+    }
+
+    &._revert {
+        color: var(--linkColorPrimary);
+
+        &:hover, &:active {
+            color: var(--linkColorText);
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        .icon {
+            fill: var(--linkColorPrimary);
+        }
+
+        &:hover .icon {
+            fill: var(--linkColorText);
+        }
+    }
+
+    &._active {
+        opacity: var(--linkActiveOpacity);
+        cursor: default;
+        &:hover, &:active  {
+            color: inherit;
+            opacity: var(--linkActiveOpacity);
+        }
+    }
+}

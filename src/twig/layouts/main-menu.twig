@@ -1,0 +1,30 @@
+{% set mainMenu =[
+    {
+        name: 'О курсе',
+        link: '#about',
+    },
+    {
+        name: 'Программа',
+        link: '#program',
+    },
+    {
+        name: 'Преимущества',
+        link: '#teachers',
+    },
+    {
+        name: 'Стоимость',
+        link: '#price',
+    },
+] %}
+
+<nav class="main-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+    <ul class="main-menu__list" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+        {% for item in mainMenu %}
+            <li class="main-menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                <a class="main-menu__item-link link" href="{{ item.link }}" itemprop="url">
+                    {{ item.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

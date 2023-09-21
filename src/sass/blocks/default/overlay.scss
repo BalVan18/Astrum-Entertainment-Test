@@ -1,0 +1,15 @@
+.overlay {
+    --overlayBg: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--overlayBg);
+    animation: overlay 0.4s ease;
+    &._active {
+        display: block;
+    }
+}

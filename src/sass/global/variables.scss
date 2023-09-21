@@ -1,0 +1,44 @@
+@custom-media --media-sm (min-width: 560px);
+@custom-media --media-md (min-width: 768px);
+@custom-media --media-lg (min-width: 992px);
+@custom-media --media-xl (min-width: 1200px);
+@custom-media --media-xxl (min-width: 1440px);
+
+:root {
+    //Шрифты
+    --f-primary: 'Roboto-Regular', 'RobotoCondensed-Bold', sans-serif;
+    --f-s-promo: 80px;
+    --f-s-h1: 32px;
+    --f-s-h2: 32px;
+    --f-s-h3: 16px;
+    --f-s-body: 16px;
+    --f-s-small: 16px;
+    @media (--media-md) {
+        --f-s-h1: 32px;
+        --f-s-h2: 24px;
+        --f-s-h3: 20px;
+    }
+    @media (--media-lg) {
+        --f-s-promo: 120px;
+        --f-s-h1: 42px;
+        --f-s-h2: 30px;
+        --f-s-h3: 24px;
+        --f-s-body: 18px;
+    }
+
+    //Цвета
+    --c-primary: rgb(77, 106, 175);
+    --c-text: rgb(12, 12, 12);
+    --c-lines: rgb(77, 106, 175);
+    --c-h2: rgba(65, 109, 244, 1);
+    --c-bg: rgb(245, 245, 245);
+    --c-red: rgba(103, 29, 0, 0.48);
+    --c-white: rgb(255, 255, 255);
+    --c-black: rgb(0, 0, 0);
+    --c-error: red;
+
+    //Дополнительно
+    --border: 1px solid var(--c-red);
+    --border-radius: 4px;
+    --transition: all 0.4s ease;
+}

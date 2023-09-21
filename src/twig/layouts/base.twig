@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="/assets/img/common/share.jpg"/>
+    <meta name="twitter:image" content="/assets/img/common/share.jpg">
+    <meta name="thumbnail" content="/assets/img/common/share.jpg">
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@vice">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link type="image/x-icon" rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <title itemprop="headline">{% block title %}{% endblock %}</title>
+    <meta itemprop="description" name="description" content="описание_страницы">
+</head>
+<body class="body">
+
+{% include 'header.twig' %}
+<main class="main">
+    {% block content %}{% endblock %}
+</main>
+
+
+{% include 'footer.twig' %}
+{# {% include 'mobile-side.twig' %}  #}
+<div id="svg-icons"></div>
+<div class="overlay js-overlay"></div>
+</body>

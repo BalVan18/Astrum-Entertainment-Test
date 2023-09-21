@@ -1,0 +1,12 @@
+.body {
+    font-family: var(--f-primary);
+    font-size: var(--f-s-body);
+    line-height: 1.2;
+    color: var(--c-white);
+    background-color: var(--c-black);
+    @extend .scroll-block;
+    &._no-scroll {
+        margin-left: -4px;
+        overflow: hidden;
+    }
+}
