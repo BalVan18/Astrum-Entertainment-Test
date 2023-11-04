@@ -1,17 +1,17 @@
 .hero {
     position: relative;
-    height: 892px;
     overflow: hidden;
     margin-bottom: 60px;
 
     &__container {
-        height: 100%;
         pointer-events: none;
     }
 
     .hue-saturation {
         position: absolute;
+        width: 100%;
         height: 100%;
+        bottom: 1px;
     }
 
     .layer {
@@ -49,18 +49,21 @@
     .blue-glow {
         position: absolute;
         bottom: 0;
+        width: 100%;
     }
 
     .mafia-costume-1 {
         position: absolute;
         left: 0;
         bottom: 0;
+        width: 30.05%;
     }
 
     .mafia-costume-2 {
         position: absolute;
         right: 20px;
         bottom: 0;
+        width: 35.3%;
     }
 
     &__content {
@@ -74,6 +77,7 @@
         .logo {
             position: relative;
             left: 25px;
+            width: 100%;
             pointer-events: none;
             transition: opacity 0.3s linear;
         }
@@ -81,11 +85,13 @@
         .boxes {
             position: relative;
             bottom: 80px;
+            width: 39.9%;
         }
     }
 
     &__link {
         pointer-events: auto;
+        width: 19.58%;
 
         &:hover {
             .logo {
@@ -117,40 +123,47 @@
 .promo {
     position: relative;
     overflow: hidden;
-    height: 1024px;
+
+    &__container {
+        display: flex;
+    }
 
     .background-wall {
         position: absolute;
         height: 100%;
         pointer-events: none;
+        z-index: -1;
     }
 
     &__vito {
         position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
         width: 50%;
+        padding-left: 200px;
         pointer-events: none;
     }
 
-    .ellipse,
-    .vito {
-        position: absolute;
-        top: 0;
+    .vito--media {
+        display: none;
     }
 
     .ellipse {
-        left: 100px;
+        position: absolute;
+        width: 100%;
     }
 
     .vito {
-        right: 160px;
+        position: relative;
+        width: 58%;
     }
 
     .set {
-        position: relative;
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin-left: auto;
+        width: 652px;
+        padding-right: 20px;
 
         &__title {
             font-family: "RobotoCondensed-Bold";
@@ -163,7 +176,7 @@
         &__wrap {
             display: flex;
             flex-direction: column;
-            width: 632px;
+            width: 100%;
         }
 
         .servtype {
@@ -269,5 +282,6 @@
     .blue-glow {
         position: absolute;
         bottom: 0;
+        width: 100%;
     }
 }
